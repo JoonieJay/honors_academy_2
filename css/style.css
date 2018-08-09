@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody|Merienda|Nanum+Brush+Script|Oswald|Playfair+Display|Sunflower:300');
+
+
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container3{
+  width: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding: 20px;
+  margin: 0;
+  background-color: #ffffff;
+  text-align: center;
+  color: #008ae6;
+  border-top: #008ae6 5px solid;
+}
+
+/* Header */
+header{
+  background-color: #ffffff;
+  color: #008ae6;
+  font-family: 'Oswald';
+  line-height: 0.8;
+  padding-top: 30px;
+  min-height: 90px;
+  border-bottom: #008ae6 5px solid;
+}
+
+header a{
+  color: #008ae6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Hi Melody';
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0px 20px 0px 20px;
+}
+
+header #logo{
+  float: left;
+}
+
+header #logo img{
+  width: 55px;
+  margin-right: 10px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header #branding h2{
+  margin-top: 10px;
+}
+
+header nav{
+  position: absolute;
+  margin-top: 10px;
+  right: 20px;
+}
+
+header .current a{
+  color: #008ae6;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+  padding-top: 100px;
+  min-height: 400px;
+  background: url('../img/아너스4.png') no-repeat 0 -90px;
+  background-size: 100% 200%;
+  color: #008ae6;
+  text-shadow: 0 0 10px #fff;
+  border-bottom: #008ae6 5px solid;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+/* Boxes */
+#boxes {
+  background: #ffffff;
+}
+
+#boxes .box{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box img{
+  width: 300px;
+  margin-top: 10px;
+}
+
+/* Contact Us Page */
+/*
+.contact .visit {
+  float: right;
+}
+
+.visit2 {
+  font-size: 15px;
+}
+
+.contact .map {
+  float: left;
+}
+
+.contact .map h1{
+  text-align: center;
+}
+*/
+#map {
+  width: 100;
+  height: 500px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+}
+
+#map .inner{
+  margin: 20px;
+  text-align: center;
+}
+/* About Us Page */
+
+.title-text {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid #008ae6;
+  border-radius: 10px;
+}
+
+#main-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-col img{
+  width: 70%;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main-col p{
+  margin-left: 35px;
+}
+
+#main-col ul{
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+/* Programs Page */
+.program {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  border: 3px solid black;
+}
+
+.program td{
+  padding: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  word-break: normal;
+}
+
+.program th{
+  padding: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  word-break: normal;
+}
+
+.program .text{
+  text-align: center;
+}
+
+.program th{
+  background-color: #e6f2ff;
+}
+
+.program td:nth-child(n+1){
+  background-color: #e6fff7;
+}
+
+.program td:nth-child(3){
+  background-color: #ffe6e6;
+}
+
+.program td#special{
+  background-color: #ffe6e6;
+}
+
+/* Library Page */
+
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.main ul{
+  margin-left: 20%;
+}
+
+.main ol{
+  margin-left: 15%;
+  margin-right: 10px;
+}
+
+
+.main img{
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.main #button-title {
+  margin-left: 40%;
+  padding: 5px;
+  font-size: 40px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.main.main #button-title2 {
+  margin-left: 40%;
+  padding: 5px;
+  font-size: 40px;
+  border: 1px solid white;
+  cursor: pointer;
+}

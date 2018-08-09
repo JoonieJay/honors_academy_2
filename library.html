@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Website for Honors English Academy">
+    <meta name="keywords" content="English, Academy, Library, Honors">
+    <meta name="author" content="Joon Choi">
+    <title> 아너스영어도서관 | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"><img src="./img/favicon.png"></a>
+        </div>
+        <div id="branding">
+          <h1>Honors English Academy</h1>
+          <h2>Honors Library</h2>
+        </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="library.html">Honors Library<br><span style="font-size:20px">아너스영어도서관</span></a></li>
+          <li><a href="about.html">About Us<br><span style="font-size:20px">소개</span></a></li>
+          <li><a href="program.html">Program<br><span style="font-size:20px">프로그램</span></a></li>
+          <li><a href="contactUs.html">Contact Us<br><span style="font-size:20px">연락처</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <section class="container2">
+      <div>
+        <div class="main">
+          <div class="item1">
+           <img src="./img/library.jpg">
+          </div>
+          <div class="item2">
+            <button type="button" id="button-title" onclick="document.getElementById('button-title').style.display='none'"><strong>도서관 이용방법</strong></button>
+            <ul id="first" style="display:none">
+              <li>수업시간은 1시간30분 ~ 2시간</li>
+              <li>한달에 8번, 일주일에 최소 2번 동원하여 책을 읽고 담임선생님과 1:1로 30분 check-up!</li>
+              <li>지정된 check-up 시간 외 자유롭게 도서관 이용!</li>
+            </ul>
+          </div>
+          <div class="item3">
+            <img src="./img/library.png">
+          </div>
+          <div class="item4">
+            <button type="button" id="button-title2" onclick="document.getElementById('button-title2').style.display='none'"><strong>어떻게 공부하나요?</strong></button>
+            <ol id="second" style="display:none">
+              <li>미국 르네상스 러닝사와 STAR Reading Test후에 학생과 적합한 담임선생님을 결정</li>
+              <li>리딩레벨 I/II 학생은 담임선생님이 추천하는 책과 학생이 읽고 싶은 책을 혼합</li>
+              <li>리딩레벨 III/IV 학생부터는 픽션, 논픽션, 신문으로 구성된 균형잡힌 정독프로그램 제공</li>
+              <li>헤드폰을 착용하여 오디오를 들으면서 리딩 + 읽기의 독립을 위해 오디오가 제공되지 않는 리딩</li>
+              <li>책을 다 읽은 후 AR 시스템을 통해 책의 이해도와 어휘력을 측정<br>(리딩레벨 III/IV 책의 경우, 하루에 다 읽지 못함으로 담임선생님께서 정해준 부분까지 리딩)</li>
+              <li>북퀴즈 후 담임선생님과 함께 교실로 이동하여 30분동안 1:1 개별 check-up 진행<br>책의 내용 이해 파악 및 비판적/창의적 리딩을 키울수 있도록 담임선생님과 토론</li>
+              <li>Check-up 후 도서관에서 summary 및 writing 과제를 완료하며, 단어테스트 등 세심한 관리 지도를 받을 수 있습니다.</li>
+              <li>시간의 여유가 있는 학생은 책을 더 읽은 후, 가정으로 빌려갈 책을 고른 후에 하원합니다.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2018 JoonieJay. All Rights Reserved.</p>
+    </footer>
+    <script>
+    $(document).ready(function (){
+      $(".container2").css('display','none');
+      $(".container2").fadeIn(800);
+      $("#button-title").click(function(){
+          $("#first").fadeIn("slow");
+      });
+      $("#button-title2").click(function(){
+          $("#second").fadeIn("slow");
+      });
+    });
+    </script>
+  </body>
+</html>

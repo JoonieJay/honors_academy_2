@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Website for Honors English Academy">
+    <meta name="keywords" content="English, Academy, Library, Honors">
+    <meta name="author" content="Joon Choi">
+    <title> 아너스영어도서관 | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.png">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=lAiM0E9yx0qqcd7EeQkA&submodules=geocoder"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"><img src="./img/favicon.png"></a>
+        </div>
+        <div id="branding">
+          <h1>Honors English Academy</h1>
+          <h2>Honors Library</h2>
+        </div>
+      <nav>
+        <ul>
+          <li><a href="library.html">Honors Library<br><span style="font-size:20px">아너스영어도서관</span></a></li>
+          <li><a href="about.html">About Us<br><span style="font-size:20px">소개</span></a></li>
+          <li><a href="program.html">Program<br><span style="font-size:20px">프로그램</span></a></li>
+          <li class="current"><a href="contactUs.html">Contact Us<br><span style="font-size:20px">연락처</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <section class="contact">
+      <div class="container3">
+        <!--
+        <div class="visit">
+        <h1>Honors English Academy<br>Honors Library</h1>
+        <h3>광주광역시 남구 봉선중앙로 3 (304), 실로암빌딩 2층<br>TEL: 062-673-0088<br>E-mail: honors0088@naver.com</h3>
+      </div>-->
+        <div class="map">
+          <!--<h1>찾아오시는 길</h1>-->
+          <div id="map"></div>
+          <script>
+              var mapOptions = {
+                center: new naver.maps.LatLng(35.121549, 126.912702),
+                zoom: 13,
+                minZoom: 1,
+                zoomControl: true,
+                zoomControlOptions: {
+                  position: naver.maps.Position.TOP_RIGHT
+                }
+              };
+              var map = new naver.maps.Map('map', mapOptions);
+              /*var marker = new naver.maps.Marker({
+              position: new naver.maps.LatLng(35.121475, 126.912534),
+              map: map
+            });*/
+              var position = new naver.maps.LatLng(35.121475, 126.912534);
+              var markerOptions = {
+                position: position,
+                map: map,
+                icon: {
+                  url: './img/favicon.png',
+                  size: new naver.maps.Size(35,35),
+                  scaledSize: new naver.maps.Size(35,35),
+                  origin: new naver.maps.Point(0,0),
+                  anchor: new naver.maps.Point(15,30)
+                }
+              };
+              var marker = new naver.maps.Marker(markerOptions);
+              var honorsContent = [
+                '<div class="inner">',
+                '<h1>Honors English Academy<br>Honors Library</h1>',
+                '<h3>광주광역시 남구 봉선중앙로 3 (304), 실로암빌딩 2층<br>TEL: 062-673-0088<br>E-mail: honors0088@naver.com</h3>',
+                '</div>'
+              ].join('');
+              var infowindow = new naver.maps.InfoWindow({
+                  content: honorsContent,
+                  maxWidth: 500,
+                  backgroundColor: "#fff",
+                  borderColor: "#008ae6",
+                  borderWidth: 5,
+                  anchorSize: new naver.maps.Size(30, 30),
+                  anchorSkew: true,
+                  anchorColor: "#fff",
+              });
+              naver.maps.Event.addListener(marker, "click", function(e) {
+                if (infowindow.getMap()) {
+                  infowindow.close();
+                } else {
+                  infowindow.open(map,marker);
+                }
+              });
+          </script>
+          </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2018 JoonieJay. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
